@@ -2,17 +2,17 @@ body{
    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .title{
-   margin: 50px auto;
+   margin: 20px auto;
    font-size: 24px;
    text-align: center;
 }
-.form-container{
+#form-container{
    max-width: 800px;
    margin: 0 auto 50px auto;
 }
 .form{
    width: 800px;
-   text-align: center;
+   text-align: left;
 }
 #keyboard{
    border: 2px solid rgb(141, 141, 141);
@@ -22,7 +22,11 @@ body{
    flex-wrap: wrap;
    //justify-content: center;
 }
-
+.info{
+   margin-top: 20px;
+   text-align: center;
+   font-style: 16px;
+}
 .key{
    min-width: 50px;
    height: 50px;
@@ -35,7 +39,30 @@ body{
    font-weight: 500px;
    text-align: center;
    font-size: 18px;
+   animation: all 1s ease;
+   cursor: pointer;
+   &:hover{
+      background: rgb(232, 188, 188);
+      
+   }
 }
+.key-ru{
+   width: 100%;
+   height: 100%;
+   //padding: 5px;
+}
+.normal-ru,
+.shift-ru,
+.caps-ru,
+.normal-en,
+.shift-en,
+.caps-en,
+.capsShift-ru,
+.capsShift-en{
+   width: 100%;
+   height: 100%;
+}
+
 .clear{
    clear: both;
 }
@@ -80,4 +107,9 @@ body{
 .metaleft,
 .altleft{
    text-align: left;
+}
+
+.active{
+   background: rgb(241, 207, 207);
+   border-radius: 25%;
 }

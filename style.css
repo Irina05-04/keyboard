@@ -3,19 +3,19 @@ body {
 }
 
 .title {
-  margin: 50px auto;
+  margin: 20px auto;
   font-size: 24px;
   text-align: center;
 }
 
-.form-container {
+#form-container {
   max-width: 800px;
   margin: 0 auto 50px auto;
 }
 
 .form {
   width: 800px;
-  text-align: center;
+  text-align: left;
 }
 
 #keyboard {
@@ -27,6 +27,12 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.info {
+  margin-top: 20px;
+  text-align: center;
+  font-style: 16px;
 }
 
 .key {
@@ -41,6 +47,30 @@ body {
   font-weight: 500px;
   text-align: center;
   font-size: 18px;
+  -webkit-animation: all 1s ease;
+          animation: all 1s ease;
+  cursor: pointer;
+}
+
+.key:hover {
+  background: #e8bcbc;
+}
+
+.key-ru {
+  width: 100%;
+  height: 100%;
+}
+
+.normal-ru,
+.shift-ru,
+.caps-ru,
+.normal-en,
+.shift-en,
+.caps-en,
+.capsShift-ru,
+.capsShift-en {
+  width: 100%;
+  height: 100%;
 }
 
 .clear {
@@ -94,4 +124,9 @@ body {
 .metaleft,
 .altleft {
   text-align: left;
+}
+
+.active {
+  background: #f1cfcf;
+  border-radius: 25%;
 }

@@ -1,0 +1,115 @@
+body{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.title{
+   margin: 20px auto;
+   font-size: 24px;
+   text-align: center;
+}
+#form-container{
+   max-width: 800px;
+   margin: 0 auto 50px auto;
+}
+.form{
+   width: 800px;
+   text-align: left;
+}
+#keyboard{
+   border: 2px solid rgb(141, 141, 141);
+   width: 1020px;
+   margin: 0 auto;
+   display: flex;
+   flex-wrap: wrap;
+   //justify-content: center;
+}
+.info{
+   margin-top: 20px;
+   text-align: center;
+   font-style: 16px;
+}
+.key{
+   min-width: 50px;
+   height: 50px;
+   margin: 3px;
+   padding: 5px;
+   border: 1px solid #000;
+   display: block;
+   background-color: rgb(240, 247, 247);
+   color:rgb(141, 141, 141);
+   font-weight: 500px;
+   text-align: center;
+   font-size: 18px;
+   animation: all 1s ease;
+   cursor: pointer;
+   &:hover{
+      background: rgb(232, 188, 188);
+      
+   }
+}
+.key-ru{
+   width: 100%;
+   height: 100%;
+   //padding: 5px;
+}
+.normal-ru,
+.shift-ru,
+.caps-ru,
+.normal-en,
+.shift-en,
+.caps-en,
+.capsShift-ru,
+.capsShift-en{
+   width: 100%;
+   height: 100%;
+}
+
+.clear{
+   clear: both;
+}
+.backspace{
+   min-width: 118px;
+}
+.capslock,
+.enter,
+.shiftleft,
+.shiftright{
+   min-width: 118px;
+}
+
+.arrowup,
+.arrowdown,
+.arrowleft,
+.arrowright{
+   max-width: 50px;
+}
+.space{
+   min-width: 423px;
+}
+.controlleft,
+.controlright{
+   max-width: 50px;
+}
+.backspace,
+.del,
+.enter,
+.shiftright,
+.controlright{
+   text-align: right;
+}
+.altleft,
+.altright{
+   min-width: 67.5px;
+}
+.tab,
+.capslock,
+.shiftleft,
+.controlleft,
+.metaleft,
+.altleft{
+   text-align: left;
+}
+
+.active{
+   background: rgb(241, 207, 207);
+   border-radius: 25%;
+}
